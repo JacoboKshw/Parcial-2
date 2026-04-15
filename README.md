@@ -120,3 +120,24 @@ B ε
   ## Conclusion
   Dado que para cada no terminal X, las intersecciones de los conjuntos de predicción de sus producciones alternativas son vacías, se demuestra matemáticamente que la gramática es LL(1)
 
+---
+## Cuarto Punto
+
+---
+## Quinto Punto
+- Calculadora booleana en YACC y expliclar como funciona el analizador sintactico.
+
+La calculadora fue implementada utilizando un analizador de tipo LALR(1) a través de la librería PLY. Este enfoque permite que el programa evalúe las expresiones booleanas con una complejidad temporal de O(n), donde n es el número de tokens.
+
+Ejecucion:
+
+```bash
+python3 CalculadoraBool.py
+```
+## Pruebas
+<img width="1477" height="562" alt="imagen" src="https://github.com/user-attachments/assets/05dba2a1-0339-4fb7-931e-8042a53453f3" />
+
+
+## Conclusion
+
+El analizador sintáctico del punto 5 funciona bajo el algoritmo LALR(1), el cual procesa las expresiones booleanas de manera eficiente al realizar un solo recorrido de izquierda a derecha sobre la entrada. Este sistema utiliza una tabla de estados precalculada —almacenada en el archivo parsetab.py— que le permite decidir instantáneamente si debe agrupar términos o avanzar al siguiente símbolo, garantizando que el tiempo de respuesta sea siempre proporcional a la longitud de la expresión.
