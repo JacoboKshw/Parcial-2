@@ -140,4 +140,4 @@ python3 CalculadoraBool.py
 
 ## Conclusion
 
-El analizador sintáctico del punto 5 funciona bajo el algoritmo LALR(1), el cual procesa las expresiones booleanas de manera eficiente al realizar un solo recorrido de izquierda a derecha sobre la entrada. Este sistema utiliza una tabla de estados precalculada —almacenada en el archivo parsetab.py— que le permite decidir instantáneamente si debe agrupar términos o avanzar al siguiente símbolo, garantizando que el tiempo de respuesta sea siempre proporcional a la longitud de la expresión.
+El analizador sintáctico del punto 5 funciona bajo el algoritmo LALR(1), el cual procesa las expresiones booleanas de manera eficiente al realizar un solo recorrido de izquierda a derecha sobre la entrada. Este sistema utiliza una tabla de estados precalculada y almacenada en el archivo parsetab.py que le permite decidir instantáneamente si debe agrupar términos o avanzar al siguiente símbolo, garantizando que el tiempo de respuesta sea siempre proporcional a la longitud de la expresión.
