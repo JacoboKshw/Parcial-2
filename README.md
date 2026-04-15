@@ -129,11 +129,17 @@ B ε
 
 La calculadora fue implementada utilizando un analizador de tipo LALR(1) a través de la librería PLY. Este enfoque permite que el programa evalúe las expresiones booleanas con una complejidad temporal de O(n), donde n es el número de tokens.
 
-Ejecucion:
+## Dependencias
+Se necesita instalar PLY
+``bash
+pip install ply
+```
 
+## Ejecucion:
 ```bash
 python3 CalculadoraBool.py
 ```
+
 ## Pruebas
 <img width="1477" height="562" alt="imagen" src="https://github.com/user-attachments/assets/05dba2a1-0339-4fb7-931e-8042a53453f3" />
 
