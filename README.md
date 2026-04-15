@@ -93,13 +93,13 @@ A ε
 B ε
 ```
 
-- Primero una gramática es LL(1) si, para cualquier no terminal que tenga múltiples producciones (como S, A o B en tu caso), los conjuntos de predicción de esas producciones son disjuntos (su intersección es vacía).
+- Primero una gramática es LL(1) si, para cualquier no terminal que tenga múltiples producciones (, los conjuntos de predicción de esas producciones son disjuntos (su intersección es vacía).
 
 -sacamos los conjuntos First, Follow, y conjuntos de prediccion:
 
 <img width="1186" height="550" alt="imagen" src="https://github.com/user-attachments/assets/9e6cb326-0fce-4c8e-a443-4dc9f26105dd" />
 
-- Debes evaluar cada no terminal que tenga más de una regla o que produzca vacío (ϵ):
+- Toca evaluar cada no terminal que tenga más de una regla o que produzca vacío (ϵ):
 
   No terminal S:
 
