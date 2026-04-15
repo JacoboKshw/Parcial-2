@@ -131,7 +131,7 @@ La calculadora fue implementada utilizando un analizador de tipo LALR(1) a trav√
 
 ## Dependencias
 Se necesita instalar PLY
-``bash
+```bash
 pip install ply
 ```
 
