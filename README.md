@@ -79,8 +79,13 @@ grun Punto1 programa -tree < prueba.txt
 - Arbol de derivacion por consola
   <img width="1859" height="125" alt="imagen" src="https://github.com/user-attachments/assets/ca307016-167c-4b39-83df-4cd44419fba9" />
 
+- Arbol de derivacion con error (INSERT INTO usuarios {"nombre": "Error", "edad": 99};)
 
-árbol de derivación sintáctica  generado por la herramienta ANTLR4 tras procesar un archivo de prueba con la gramática. En ella se observa cómo el analizador descompone jerárquicamente las sentencias CRUD —INSERT, FIND, UPDATE y DELETE— en sus componentes mínimos (tokens), validando que la estructura de los comandos, como los filtros WHERE y la definición de documentos {clave: valor}, cumple estrictamente con las reglas definidas en la gramática.
+  <img width="1600" height="366" alt="imagen" src="https://github.com/user-attachments/assets/b9c21199-d477-4319-8ca6-bc2b6dd2894f" />
+
+  <img width="1600" height="148" alt="imagen" src="https://github.com/user-attachments/assets/61508f7c-2b50-456f-ad24-7b8f4ced6a81" />
+
+El árbol de derivación sintáctica generado por la herramienta ANTLR4 tras procesar un archivo de prueba demuestra cómo el analizador descompone jerárquicamente las sentencias CRUD —INSERT, FIND, UPDATE y DELETE— en sus componentes mínimos (tokens). Este proceso valida que la estructura de los comandos, como los filtros WHERE y la definición de documentos {clave: valor}, cumple estrictamente con las reglas definidas en la gramática. Además, se incluyó una prueba con la introducción de errores (como la omisión de palabras clave obligatorias o cierres de llaves incorrectos), confirmando que el parser es capaz de detectar y rechazar instrucciones mal formadas. Esta capacidad de validación asegura que el sistema funcione como un filtro, garantizando que solo las peticiones con sintaxis válida sean aceptadas para su ejecución.
 
 ---
 
