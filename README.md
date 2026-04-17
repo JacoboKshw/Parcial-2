@@ -118,10 +118,41 @@ B ε
         Para B→ϵ, el conjunto de predicción es {a,b}.
 
   ## Conclusion
-  Dado que para cada no terminal X, las intersecciones de los conjuntos de predicción de sus producciones alternativas son vacías, se demuestra matemáticamente que la gramática es LL(1)
+  Dado que para cada no terminal X, las intersecciones de los conjuntos de predicción de sus producciones alternativas son vacías, se demuestra que la gramática es LL(1)
 
 ---
 ## Cuarto Punto
+
+-Comparacion entre parser CYK y parser LL(1),midiendo los tiempos de ejecución para expresiones con diferentes cantidades de operadores. Los resultados, documentados en gráficas de escala lineal y logarítmica.
+
+## Ejecucion
+ - Parser CYK
+```bash
+python3 cyl_parser.py
+```
+
+-Parser LL(1)
+```bash
+python3 ll1_parser.py
+```
+
+## Resultados
+Para evaluar el desempeño de ambos algoritmos, se hicieron pruebas automáticas que consistió en generar expresiones aritméticas, variando el número de operadores en un rango de 2 a 50, estos fueron los resultados:
+
+- Parser CYK
+  <img width="1205" height="408" alt="imagen" src="https://github.com/user-attachments/assets/856b3458-e2ee-424b-b799-1791e3df30c9" />
+
+  <img width="1934" height="741" alt="benchmark_cyk" src="https://github.com/user-attachments/assets/bbe8c55e-d35e-4518-ba33-81873b6f13bf" />
+
+
+- Parser LL(1)
+  <img width="1154" height="653" alt="imagen" src="https://github.com/user-attachments/assets/e3acae6e-d344-44a4-b07f-2043f5ea5029" />
+
+  <img width="1934" height="741" alt="benchmark_ll1" src="https://github.com/user-attachments/assets/9c48d48e-40af-44f7-a2cd-a03d2885da97" />
+
+## Conclusion
+Al comparar el rendimiento de ambos algoritmos, se evidencia que el parser LL(1) es drásticamente más eficiente que el CYK, ya que el primero presenta un crecimiento de tiempo lineal O(n) frente al crecimiento polinomial O(n3) del segundo. Los datos de las pruebas muestran que para una expresión de 50 operadores, el algoritmo CYK requiere 63.570 ms para procesar la cadena, mientras que el parser predictivo lo resuelve en apenas 0.0283 ms, siendo miles de veces más rápido y eficiente.
+
 
 ---
 ## Quinto Punto
