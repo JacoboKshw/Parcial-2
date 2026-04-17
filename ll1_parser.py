@@ -1,5 +1,5 @@
 """
-Parser Predictivo LL(1) para Calculadora
+Parser Predictivo LL(1)
 ==========================================
 Gramática (sin recursión izquierda, lista para LL(1)):
 
