@@ -73,7 +73,13 @@ grun Punto1 programa -tree < prueba.txt
 ---
 
 ## Resultado en consola:
-- Arbol de derivacion
+- Arbol de derivacion de forma visual
+ <img width="1858" height="386" alt="imagen" src="https://github.com/user-attachments/assets/aac7d1d5-aebd-438d-a382-7df36e2f6879" />
+
+- Arbol de derivacion por consola
+
+  
+
 
 
 árbol de derivación sintáctica  generado por la herramienta ANTLR4 tras procesar un archivo de prueba con la gramática. En ella se observa cómo el analizador descompone jerárquicamente las sentencias CRUD —INSERT, FIND, UPDATE y DELETE— en sus componentes mínimos (tokens), validando que la estructura de los comandos, como los filtros WHERE y la definición de documentos {clave: valor}, cumple estrictamente con las reglas definidas en la gramática.
