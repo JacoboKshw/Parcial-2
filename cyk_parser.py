@@ -1,5 +1,5 @@
 """
-Parser CYK para Calculadora
+Parser CYK 
 
 Gramática en Forma Normal de Chomsky (CNF):
 
