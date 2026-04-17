@@ -1,4 +1,4 @@
-grammar NoSQL;
+grammar Punto1;
 
 programa : sentencia (';' sentencia)* ';'? EOF ;
 
