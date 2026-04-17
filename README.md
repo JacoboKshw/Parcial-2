@@ -24,17 +24,17 @@
  
 ## Ejemplos de sentencias válidas
  
-```sql
--- CREATE: insertar un documento
+```
+-- CREATE
 INSERT INTO usuarios VALUES {"nombre": "Ana", "edad": 25};
  
--- READ: buscar con filtro
+-- READ
 FIND IN usuarios WHERE "edad" > 18;
  
--- UPDATE: modificar un campo con condición
+-- UPDATE
 UPDATE usuarios SET "edad" = 26 WHERE "nombre" == "Ana";
  
--- DELETE: eliminar con condición
+-- DELETE
 DELETE FROM usuarios WHERE "activo" == FALSE;
 ```
 
